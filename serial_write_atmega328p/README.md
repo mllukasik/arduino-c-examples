@@ -6,6 +6,7 @@ language: C
 hardware: atmega328p
 
 > :warning: code and Makefile was written for arduino uno R3 SMD
+
 > :warning: Makefile includes hard coded port name
 
 ## bugs:
