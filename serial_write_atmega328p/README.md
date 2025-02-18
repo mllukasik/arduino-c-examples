@@ -3,7 +3,7 @@
 Serial write example [from arduino examples](https://docs.arduino.cc/language-reference/en/functions/communication/serial/write/#example-code), but written in C.
 
 language: C
-hardware: atmega328p
+hardware: UNO R3 SMD(atmega328p)
 
 > :warning: code and Makefile was written for arduino uno R3 SMD
 

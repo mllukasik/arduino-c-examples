@@ -3,7 +3,7 @@
 Blink example [from arduino examples](https://docs.arduino.cc/built-in-examples/basics/Blink/#code), but written in C.
 
 language: C
-hardware: atmega328p
+hardware: UNO R3 SMD(atmega328p)
 
 > :warning: code and Makefile was written for arduino uno R3 SMD
 
