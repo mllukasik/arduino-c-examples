@@ -14,13 +14,13 @@ void usartInit(unsigned int ubrr) {
     UBRR0L = (unsigned char)ubrr;
 
     // Enable transmitter (TX) and receiver (RX)
-    UCSR0B = (1 << TXEN0) | (1 << RXEN0);
+    UCSR0B = (1 << TXEN0);
 
     // Set frame format: 8 data bits, 1 stop bit (8N1)
     UCSR0C = (1 << UCSZ01) | (1 << UCSZ00);
 }
 
-// enable USART Data Register
+// enable USART Data Register Empty Interrupt
 void enableEmptyInterapt(uint8_t enabled) {
     uint8_t mask = (1 << UDRIE0);
     UCSR0B = (UCSR0B & ~mask) | (enabled ? mask : 0);
