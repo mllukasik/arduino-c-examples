@@ -1,3 +1,5 @@
+PORT=/dev/ttyACM0
+
 compile:
 	@echo "compile"
 	@mkdir -p build
@@ -7,7 +9,7 @@ compile:
 .PHONY: deploy
 deploy:
 	@echo "deploy"
-	@avrdude -c arduino -p ATMEGA328P -P /dev/ttyACM0 -b 115200 -U flash:w:build/main.hex:i
+	@avrdude -c arduino -p ATMEGA328P -P $(PORT) -b 115200 -U flash:w:build/main.hex:i
 
 .PHONY: clean
 clean:

@@ -7,7 +7,7 @@ hardware: UNO R3 SMD(atmega328p)
 
 > :warning: code and Makefile was written for arduino uno R3 SMD
 
-> :warning: Makefile includes hard coded port name
+> :warning: Makefiles includes default port name. Use PORT={name} to overwrite it. Also it requires that you have avr-gcc, avrdude, avr-objcopy on your path
 
 ## links:
 - https://avrdudes.github.io/avr-libc
